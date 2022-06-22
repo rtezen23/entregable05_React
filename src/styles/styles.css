@@ -1,377 +1,384 @@
-body{
-    background-color: #fafafa;
+body {
+	background-color: #fafafa;
 }
 
 /* HOME */
-.home{
-    text-align: center;
+.home {
+	text-align: center;
 }
 
-.home-logo{
-    width: 100%;
-    max-width: 800px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+.home-logo {
+	width: 100%;
+	max-width: 800px;
+	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
-
-.home-title{
-    font-size: 3rem;
-    color: #FE1936;
-    font-weight: bold;
+.home-title {
+	font-size: 3rem;
+	color: #fe1936;
+	font-weight: bold;
 }
 
-.home-text{
-    font-size: 2rem;
-    margin-bottom: 100px;
+.home-text {
+	font-size: 2rem;
+	margin-bottom: 100px;
 }
 
-.home-input{
-    width: 70%;
-    max-width: 600px;
-    padding: 20px;
-    font-size: 1.5rem;
+.home-input {
+	width: 70%;
+	max-width: 600px;
+	padding: 20px;
+	font-size: 1.5rem;
 }
 
-.home-button{
-    width: 30%;
-    padding: 22px;
-    max-width: 200px;
-    color: #fff;
-    background-color: #D93F3F;
-    text-align: center;
-    font-size: 1.6rem;
-    border: none;
+.home-button {
+	width: 30%;
+	padding: 22px;
+	max-width: 200px;
+	color: #fafafa;
+	background-color: #d93f3f;
+	text-align: center;
+	font-size: 1.6rem;
+	border: none;
+	cursor: pointer;
 }
 
+.home-button:hover {
+	background-color: #db6161;
+	color: fff;
+}
 
-.home-footer{
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 150px;
-    object-fit: cover;
+.home-footer {
+	width: 100vw;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 150px;
+	object-fit: cover;
 }
 
 /* POKEMON */
 
 /* -----header------ */
 
-.pokedex-header__text{
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+.pokedex-header__text {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
 }
 
-.pokedex-header__text span{
-    color: red;
-    font-weight: bold;
+.pokedex-header__text span {
+	color: red;
+	font-weight: bold;
 }
 
 /* ------pokedex-container -----*/
 
-.pokedex-container{
-    max-width: 1500px;
-    margin: auto;
+.pokedex-container {
+	max-width: 1500px;
+	margin: auto;
 }
 
 /* ----- header */
 
-.pokedex-header-filter{
-    display: flex;
-    margin-bottom: 50px;
+.pokedex-header-filter {
+	display: flex;
+	margin-bottom: 50px;
 }
 
-.pokedex-header__input{
-    width: 400px;
-    max-width: 80%;
-    padding: 10px;
-    font-size: 1rem;
+.pokedex-header__input {
+	width: 400px;
+	max-width: 80%;
+	padding: 10px;
+	font-size: 1rem;
 }
 
-.pokedex-header__button{
-    width: 150px;
-    padding: 12px;
-    max-width: 20%;
-    color: #fff;
-    background-color: #D93F3F;
-    text-align: center;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
+.pokedex-header__button {
+	width: 150px;
+	padding: 12px;
+	max-width: 20%;
+	color: #fff;
+	background-color: #d93f3f;
+	text-align: center;
+	font-size: 1rem;
+	border: none;
+	cursor: pointer;
 }
 
-.pokedex-header-search{
-    display: flex;
-    width: 500px;
-    max-width: 100%;
-    margin-right: 20px;
+.pokedex-header-search {
+	display: flex;
+	width: 500px;
+	max-width: 100%;
+	margin-right: 20px;
 }
 
-.pokedex-header__select{
-    width: 200px;
-    font-size: 1rem;
+.pokedex-header__select {
+	width: 200px;
+	font-size: 1rem;
 }
 
 /* hover para options falta */
 
 /* CARDS */
 
-.main-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: auto;
-    gap: 2rem;
+.main-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-rows: auto;
+	gap: 2rem;
 }
 
-.card-container{
-    border: 10px solid rgb(16, 126, 25);
-    border-radius: 20px;
-    height: fit-content;
-    position: relative;
-    cursor: pointer;
+.card-container {
+	border: 10px solid rgb(16, 126, 25);
+	border-radius: 20px;
+	height: fit-content;
+	position: relative;
+	cursor: pointer;
 }
 
-.card-header{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(190, 255, 233);
+.card-header {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(190, 255, 233);
 }
 
-.pokemon-card{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 70px;
+.pokemon-card {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 70px;
 }
 
-.card-info{
-    margin-bottom: 1rem;
+.card-info {
+	margin-bottom: 1rem;
 }
 
-.card-img{
-    width: 100%;
-    aspect-ratio: 1.2;
-    position: absolute;
-    top: 0;
-    left: 0;
+.card-img {
+	width: 100%;
+	aspect-ratio: 1.2;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-.card-name{
-    font-size: 1.4rem;
-    color: rgb(80, 4, 151);
-    text-transform: capitalize;
+.card-name {
+	font-size: 1.4rem;
+	color: rgb(80, 4, 151);
+	text-transform: capitalize;
 }
 
-.card-type{
-    font-size: .9rem;
+.card-type {
+	font-size: 0.9rem;
 }
 
-.card-info span{
-    font-size: .7rem;
-    color: #aaa;
+.card-info span {
+	font-size: 0.7rem;
+	color: #aaa;
 }
 
-.card-hr{
-    border: .1px solid #cacaca;
+.card-hr {
+	border: 0.1px solid #cacaca;
 }
 
-
-.card-stats{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto-fit);
-    align-items: center;
+.card-stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto-fit);
+	align-items: center;
 }
 
-.card-stats__name{
-    font-size: .8rem;
-    color: #aaa;
-    line-height: 15px;
+.card-stats__name {
+	font-size: 0.8rem;
+	color: #aaa;
+	line-height: 15px;
 }
 
-.stat-item{
-    line-height: 1.4rem;
-    margin-bottom: 15px;
+.stat-item {
+	line-height: 1.4rem;
+	margin-bottom: 15px;
 }
 
-.card-stats__number{
-    font-size: 1.1rem;
-    color: #000;
-    font-weight: bold;
+.card-stats__number {
+	font-size: 1.1rem;
+	color: #000;
+	font-weight: bold;
 }
 
 /* PAGINATION */
 
-.pokedex-pagination{
-    margin-top: 30px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.pokedex-pagination {
+	margin-top: 30px;
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
-.pokedex-pagination>*{
-    padding: 20px;
-    border: none;
-    cursor: pointer;
+.pokedex-pagination > * {
+	padding: 20px;
+	border: none;
+	cursor: pointer;
 }
 
-.pokedex-pagination>*:hover{
-    background-color: #FE1936;
-    color: #fff;
+.pokedex-pagination > *:hover {
+	background-color: #fe1936;
+	color: #fff;
 }
 
-.pagination__number{
-    font-size: 1rem;
+.pagination__number {
+	font-size: 1rem;
 }
 
 .pagination__previous,
-.pagination__next{
-    width: 100px;
+.pagination__next {
+	width: 100px;
 }
 
 /* DETAIL */
 
-.detail-container{
-    max-width: 1500px;
-    width: 100%;
-    margin: auto;
-    display: flex;
+.detail-container {
+	max-width: 1500px;
+	width: 100%;
+	margin: auto;
+	display: flex;
 }
 
-.detail-main{
-    text-align: center;
-    margin-top: 150px;
-    width: 70%;
+.detail-main {
+	text-align: center;
+	margin-top: 150px;
+	width: 70%;
 }
 
-.detail-header{
-    height: 130px;
-    background-color: aquamarine;
-    margin-bottom: 30px;
+.detail-header {
+	height: 130px;
+	background-color: aquamarine;
+	margin-bottom: 30px;
 }
 
-.detail-img{
-    position: relative;
-    top: -100px;
-    width: 230px;
-    margin: auto;
+.detail-img {
+	position: relative;
+	top: -100px;
+	width: 230px;
+	margin: auto;
 }
 
-.detail-id{
-    font-size: 1.5rem;
-    color: #416460;
-    font-weight: bold;
-    border: 2px solid #dadada;
-    display: inline;
-    margin: auto;
-    padding: 2px 6px;
+.detail-id {
+	font-size: 1.5rem;
+	color: #416460;
+	font-weight: bold;
+	border: 2px solid #dadada;
+	display: inline;
+	margin: auto;
+	padding: 2px 6px;
 }
 
-.detail-name{
-    text-transform: capitalize;
-    font-size: 2rem;
-    color: #416460;
+.detail-name {
+	text-transform: capitalize;
+	font-size: 2rem;
+	color: #416460;
 }
 
-.detail-size{
-    display: flex;
-    gap: 80px;
-    justify-content: center;
+.detail-size {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
 }
 
-.size-name{
-    font-size: .7rem;
-    line-height: 25px;
+.size-name {
+	font-size: 0.7rem;
+	line-height: 25px;
 }
 
-.size-number{
-    display: block;
-    font-weight: bold;
-    font-size: 1.2rem;
+.size-number {
+	display: block;
+	font-weight: bold;
+	font-size: 1.2rem;
 }
 
 /* detail-info */
-.detail-info{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.detail-info {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
 
 .info-type,
-.info-abilities{
-    text-align: center;
+.info-abilities {
+	text-align: center;
 }
 
-.type-text{
-    display: inline;
-    padding: 10px 30px;
-    border: 2px solid black;
-    margin-right: 10px;
+.type-text {
+	display: inline;
+	padding: 10px 30px;
+	border: 2px solid black;
+	margin-right: 10px;
 }
 
-.stats-title{
-    margin-top: 100px;
-    text-align: start;
-    font-size: 2rem;
+.stats-title {
+	margin-top: 100px;
+	text-align: start;
+	font-size: 2rem;
 }
 
-.stats-info{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.stats-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
-.info-name{
-    font-size: 1.3rem;
-    text-transform: capitalize;
+.info-name {
+	font-size: 1.3rem;
+	text-transform: capitalize;
 }
 
-.upper{
-    text-transform: uppercase;
+.upper {
+	text-transform: uppercase;
 }
 
-.stats-bar-container{
-    background-color: #eaeaea;
-    width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
+.stats-bar-container {
+	background-color: #eaeaea;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 20px;
 }
 
-.stats-bar-progress{
-    background-color: orange;
-    height: 30px;
+.stats-bar-progress {
+	background-color: orange;
+	height: 30px;
 }
 
-.info-number{
-    font-weight: bold;
+.info-number {
+	font-weight: bold;
 }
 
 /* ASIDE */
 
-.detail-aside{
-    padding: 30px;
-    width: 30%;
+.detail-aside {
+	padding: 30px;
+	width: 30%;
+	height: 100vh;
 }
 
-.aside-title{
-    text-align: center;
+.aside-title {
+	text-align: center;
 }
 
-.aside-container{
-    margin-left: 50px;
+.aside-container {
+	margin-left: 50px;
+	height: fit-content;
+	max-height: 100%;
+	overflow-y: scroll;
 }
 
-.aside-item{
-    margin-bottom: 10px;
+.aside-item {
+	margin-bottom: 10px;
 }
 
 .aside-item::marker {
-    color: #1ba4ff;
-    font-size: 1.3em;
-  }
+	color: #1ba4ff;
+	font-size: 1.3em;
+}
 
 /* extra */
-.delete{
-    border: none;
+.delete {
+	border: none;
 }

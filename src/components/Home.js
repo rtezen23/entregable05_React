@@ -12,9 +12,11 @@ const Home = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const getPokemon = name =>{
-        dispatch(changePokemon(name));
-        navigate('./pokedex');
+    const getPokemon = name => {
+        if (name) {
+            dispatch(changePokemon(name));
+            navigate('./pokedex');
+        } else alert('Type your trainer name')
     }
 
     return (
@@ -25,10 +27,10 @@ const Home = () => {
             <h1 className='home-title'>!Hello trainer!</h1>
             <p className='home-text'>Give me your name to start</p>
 
-            <input className='home-input' onChange={e=>setPokemonName(e.target.value)} value={pokemonName} />
-            <button className='home-button' onClick={()=>getPokemon(pokemonName)}>Comenzar</button>
+            <input className='home-input' onChange={e => setPokemonName(e.target.value)} value={pokemonName} />
+            <button className='home-button' onClick={() => getPokemon(pokemonName)}>Comenzar</button>
 
-            <img src={footer} alt="footer" className='home-footer'/>
+            <img src={footer} alt="footer" className='home-footer' />
         </div>
     );
 };
